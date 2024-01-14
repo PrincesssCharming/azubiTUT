@@ -40,6 +40,10 @@ print(names)
 names.sort() #sorts alphabetically
 print(names)'''
 
+#tuples
+colors = ("red", "green", "blue")
+print(colors[1])
+
 #dictionaries
 '''person = {'name': 'John', 'age': 30, 'city': 'Nairobi'}
 person['profession'] = 'Doctor' #an easy way to add to the list, the end of the list
@@ -47,7 +51,7 @@ print(person)
 print(person['name'], person['age']) #print specific detail'''
 
 #dictionaries and lists
-mary = {}
+'''mary = {}
 mary['first'] = 'mary'
 mary['last'] = 'jane'
 
@@ -63,4 +67,4 @@ people.append({
     'nationality': 'Kenyan', 'race': 'black'
 })
 
-print(people)
+print(people)'''
