@@ -52,7 +52,7 @@ while True:
         print(f"\nTotal Cost: KES{total_cost}")
 
     elif option == "5": #exit
-        print("\nThank you for using our service! Goodbye!\n\n")
+        print("\nThank you for using our service! Goodbye!\n")
         break
 
     else: #handle any invalid choices
