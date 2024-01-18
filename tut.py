@@ -41,8 +41,8 @@ names.sort() #sorts alphabetically
 print(names)'''
 
 #tuples
-colors = ("red", "green", "blue")
-print(colors[1])
+'''colors = ("red", "green", "blue")
+print(colors[1])'''
 
 #dictionaries
 '''person = {'name': 'John', 'age': 30, 'city': 'Nairobi'}
@@ -68,3 +68,51 @@ people.append({
 })
 
 print(people)'''
+
+#Tuples
+
+'''my_tuple = (1, 2, 3, "he", "they", "mangoes")
+
+gender = "binary" "non-binary" #concatenated string
+
+gender = "binary", "non-binary" #tuple
+
+print(len(my_tuple)) #find out the length of the tuple
+
+the_list = [1,2,3,4]
+the_tuple = tuple(the_list) #changes the list to a tuple
+
+if "she" in my_tuple: #finding an item in a tuple
+    print(True)
+else:
+    print(False)'''
+
+#how to update tuples - convert to list, change then convert back. 
+'''p1 = ("blue", "24", "red")
+p2 = list(p1)
+p2[1]= "teal"
+p1= tuple(p2)
+print("green" in p1) #find an item in tuple
+# print(p2)
+# print(p1)
+
+p3 = list(p1)
+p3.append("maroon") #adds to list
+p3.remove("green") #removes any specified item
+p3.pop() #removes the last item on the list
+p1= tuple(p3)
+del p3
+print(p1)'''
+
+#DICITONARIES
+
+
+#if...else statements
+name = input("Who are you? ")
+
+if name == "Faith":
+    print(f"Hello {name}, welcome!")
+elif name == "Jane":
+    print(f"Hello {name}, enjoy!")
+else:
+    print("Access denied")
