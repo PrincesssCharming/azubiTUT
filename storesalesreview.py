@@ -23,7 +23,7 @@ print("The total price average for all products is ${}".format(round(total_price
 
 #create a new price list that reduces the old prices by $ 5
 new_prices = [x-5 for x in prices]
-print("\nNew Prices List:\n{}".format(new_prices))
+print("New Prices List: {}".format(new_prices))
 
 #calculate the total revenue generated from the products
 def calculate_revenue(prices, quantities):
@@ -31,20 +31,19 @@ def calculate_revenue(prices, quantities):
     return sum([p*q for p, q in zip(prices, quantities)])
 
 total_revenue = calculate_revenue(prices, last_week)
-print("\nTotal Revenue Generated:\n${}".format(round(total_revenue)))
+print("Total Revenue Generated: ${}".format(round(total_revenue)))
 
 #calculate the average daily revenue generated from the products
-daily_revenue = round(total_revenue/sum(last_week))
-print("Average Daily Revenue Generated:\n${}".format(daily_revenue))
+daily_revenue = calculate_revenue(new_prices, last_week)
+daily_rev_per_day = daily_revenue/len(last_week)
+print("Average Daily Revenue Generated per Day: ${}".format(round(daily_rev_per_day, 2)))
 
 #based on the new prices, which products are less than $ 30?
 less_than_30 = [product < 30 for product in new_prices]
+if True:
+    print("\nProducts Less Than $30:")
+    for i in range(len(less_than_30)):
+        if less_than_30[i]:
+            print("{}: ${}".format(products[i], round(new_prices[i], 2)))
+            
 
-
-# daily_revenue = lambda day: day * calculate_average(last_week)
-# total_revenue = sum([day * price for day, price in zip(last_week, prices)])
-# daily_rev_avg = calculate_average([daily_revenue(i) for i in range(len(last_week))])
-# less_than_30 = [product < 30 for product in new_prices]
-# print("Total Revenue Generated: ", total_revenue)
-# print("Average Daily Rev Gen: ", daily_rev_avg)
-print("Products Less Than $30: ", less_than_30)
